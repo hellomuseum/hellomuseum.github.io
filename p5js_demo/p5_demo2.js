@@ -1,5 +1,11 @@
+var sketchWidth;
+var sketchHeight;
+
 function setup(){
-    createCanvas(displayWidth, displayHeight);
+    sketchWidth = document.getElementById("canv").offsetWidth;
+    sketchHeight = document.getElementById("canv").offsetHeight;
+    let renderer = createCanvas(sketchWidth,sketchHeight);
+    renderer.parent("canv")
     background(0);
 }
 
@@ -9,3 +15,4 @@ function draw(){
         line(mouseX, mouseY, pmouseX, pmouseY);
     }
 }
+

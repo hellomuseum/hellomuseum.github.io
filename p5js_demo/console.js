@@ -1,3 +1,4 @@
+
 var overscroll = function (el) {
     el.addEventListener('touchstart', function () {
         var top = el.scrollTop
@@ -14,7 +15,7 @@ var overscroll = function (el) {
             evt._isScroller = true;
     });
 }
-// overscroll(document.querySelector('.scroll'));
+overscroll(document.querySelector('.scroll'));
 document.body.addEventListener('touchmove', function (evt) {
     if (!evt._isScroller) {
         evt.preventDefault();

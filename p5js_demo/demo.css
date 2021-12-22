@@ -1,4 +1,5 @@
 .box{
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    background-color: pink;
   }
